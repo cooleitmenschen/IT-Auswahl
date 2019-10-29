@@ -6,4 +6,4 @@
 | ArchitekturExperte | Fabian, Nico, Rick |
 | DMNExperte | Fabian, Martin |
 | CamundaExperte | Martin, Max  |
-| GitHubExperte | Max |
+| GitHubExperte | Max, Rick |

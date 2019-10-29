@@ -1,5 +1,5 @@
 # Motivation
-Unsere Motivation ist es Bauunternehmen in ihren Vorhaben zu unterstützen indem allgemeine Abläufe automatisiert werden. Zum Beispiel soll die Fahrzeugwahl für bestimmte Bauvorhaben und die Kalkulation der Kosten weitestgehend automatisiert werden, um den Fokus auf das eigentliche Projekt richten zu können.
+Unsere Motivation ist es Bauunternehmen in ihrem Vorhaben zu unterstützen, indem allgemeine Abläufe automatisiert werden. Zum Beispiel soll die Fahrzeugwahl für bestimmte Bauvorhaben und die Kalkulation der Kosten weitestgehend automatisiert werden, um den Fokus auf das eigentliche Projekt richten zu können.
 
 Unser Bezugsunternehmen ist die [FGW-Bau GmbH](http://fgwbau.de/). Ein mittelständisches Unternehmen angesiedelt in Mecklenburg-Strelitz. Wir entschieden uns für dieses Unternehmen, da uns ein Projektmitglied reelle Daten zu dem vorhandenen Fuhrpark liefern kann.
 	

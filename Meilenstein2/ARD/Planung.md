@@ -1,5 +1,6 @@
-| SG1 | Bearbeiter |
+|  | Bearbeiter |
 |--|--|
+| **SG1** |  |
 |  SP1.1| Alle |
 |  SP1.2| ... |
 | **SG2** |  |

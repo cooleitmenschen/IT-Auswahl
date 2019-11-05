@@ -1,0 +1,30 @@
+### ARD - Acquisition Requirements Development
+ - ### SG 1 Develop Customer Requirements
+	- ### SP 1.1 Elicit Stakeholder Needs
+
+	 - Erhebung und Formalisierung der Kundenbedürfnisse
+		 - Kunde: Baufirma
+		 - **Schnittstellen**
+			 - Logistik
+			 - Wartung
+			 - Buchhaltung
+		 - **interne Stakeholder**
+			 - Buchhaltung
+			 - Geschäftsführung
+			 - Bauleiter
+		 - **externe Stakeholder**
+			 - IT Abteilung
+			 - Wartungsfirma
+		 - **Erhebungstechnik**
+			 - Fragebogen + persönliches Interview mit leitenden Personen
+			 - welche Technik **???**
+				 - digitaler Fragebogen
+					 - effiziente Auswertung
+					 - Qualität der Antworten?
+				 - physischer Fragebogen
+					 - Aufwand in Zeit und Auswertung
+					 - Unklarheiten direkt klären
+		 - **Rahmenbedingungen**
+			 - Organisationsstruktur
+			 - Projekt vs. Linie
+				 - Linienarbeit beachten

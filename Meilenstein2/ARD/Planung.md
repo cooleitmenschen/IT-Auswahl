@@ -1,5 +1,3 @@
-**ARD**
-
 | SG1 | Bearbeiter |
 |--|--|
 |  SP1.1| Alle |

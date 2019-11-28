@@ -1,11 +1,11 @@
-|  | Bearbeiter |
+|  | Status |
 |--|--|
 | **SG1** |  |
-|  SP1.1| Alle |
+|  SP1.1| check |
 |  SP1.2| ... |
 | **SG2** |  |
 |  SP2.1| check |
-|  SP2.2| ... |
+|  SP2.2| check |
 | **SG3** |  |
 |  SP3.1| ... |
 |  SP3.2| ... |

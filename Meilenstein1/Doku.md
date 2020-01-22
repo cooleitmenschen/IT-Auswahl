@@ -12,6 +12,6 @@
 |2.12.| Bericht und Präsentation | alle | Fertigstellung des Berichtes und der Teampräsentation |
 |3.12.| Präsentation | Martin Kayenberg, Nico Knaack, Fabian Weichert | Teampräsentation |
 |bis 8.12.| Bericht | individuell | Ausarbeitung des Berichtes (SP ARD & SSAD inklusive AHP) |
-|12.12.| Camunda BPM | alle | erste Ausarbeitung des Prozesses |
+|12.12.| Camunda BPM | alle | Erste Ausarbeitung des Prozesses |
 |6.1.| Camunda BPM | alle | Weiterentwicklung des Prozesses |
 |15.1| Camunda BPM | alle | Überarbeitung des Prozesses mit Hilfestellung von Fr. Hu |

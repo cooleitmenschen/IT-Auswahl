@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/1.0" id="Definitions_0wdghzj" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="3.3.5">
+  <decision id="Decision_1cif402" name="Wartungsvergabe">
+    <extensionElements>
+      <biodi:bounds x="416" y="233" width="180" height="80" />
+      <biodi:edge source="InputData_1ck6zmk">
+        <biodi:waypoints x="396" y="376" />
+        <biodi:waypoints x="465" y="313" />
+      </biodi:edge>
+      <biodi:edge source="InputData_1f12bwb">
+        <biodi:waypoints x="626" y="380" />
+        <biodi:waypoints x="551" y="313" />
+      </biodi:edge>
+      <biodi:edge source="InputData_06kojze">
+        <biodi:waypoints x="281" y="309" />
+        <biodi:waypoints x="416" y="288" />
+      </biodi:edge>
+    </extensionElements>
+    <informationRequirement>
+      <requiredInput href="#InputData_1ck6zmk" />
+    </informationRequirement>
+    <informationRequirement>
+      <requiredInput href="#InputData_1f12bwb" />
+    </informationRequirement>
+    <informationRequirement>
+      <requiredInput href="#InputData_06kojze" />
+    </informationRequirement>
+    <decisionTable id="decisionTable_1">
+      <input id="input_1" label="Fahrzeugalter">
+        <inputExpression id="inputExpression_1" typeRef="integer">
+          <text>age</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_13ohxmn" label="Fahrzeugklasse">
+        <inputExpression id="LiteralExpression_081mt3r" typeRef="string">
+          <text>class</text>
+        </inputExpression>
+        <inputValues id="UnaryTests_158wb37">
+          <text>"class1","class2"</text>
+        </inputValues>
+      </input>
+      <input id="InputClause_0qzmf3m" label="Vertragsart">
+        <inputExpression id="LiteralExpression_0i6e6f5" typeRef="string">
+          <text>type</text>
+        </inputExpression>
+        <inputValues id="UnaryTests_1hzx2zx">
+          <text>"Leasing","Wartungsvertrag","Eigene Kfz"</text>
+        </inputValues>
+      </input>
+      <output id="output_1" label="Vergabe" name="vergabe" typeRef="string">
+        <outputValues id="UnaryTests_11k8xdh">
+          <text>"Interne Vergabe","Externe Vergabe"</text>
+        </outputValues>
+      </output>
+      <rule id="DecisionRule_0ytit4d">
+        <inputEntry id="UnaryTests_05a57x7">
+          <text>[0..3]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0zl63b7">
+          <text>"class1"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0f53jqc">
+          <text>"Leasing"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0hdy43n">
+          <text>"Externe Vergabe"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0drdhnk">
+        <inputEntry id="UnaryTests_029o351">
+          <text>[0..3]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0eeghau">
+          <text>"class1"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1g8jsue">
+          <text>"Wartungsvertrag"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0kiqbkz">
+          <text>"Externe Vergabe"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1mwf581">
+        <inputEntry id="UnaryTests_0dwx0jc">
+          <text>[0..3]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_13xfupw">
+          <text>"class1"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0tjg6hd">
+          <text>"Eigene Kfz"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0ypqh1c">
+          <text>"Externe Vergabe"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1y4xwh4">
+        <inputEntry id="UnaryTests_1x6bdse">
+          <text>[0..3]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0s7e55z">
+          <text>"class2"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0yfkf86">
+          <text>"Leasing"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0ryo5fx">
+          <text>"Externe Vergabe"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_005mve5">
+        <inputEntry id="UnaryTests_0iryibc">
+          <text>[0..3]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_03hba0s">
+          <text>"class2"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_06p7s7e">
+          <text>"Wartungsvertrag"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_00nf1bs">
+          <text>"Externe Vergabe"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0gl3s06">
+        <inputEntry id="UnaryTests_1ro560n">
+          <text>[0..3]</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ykjgrd">
+          <text>"class2"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1yiqpsn">
+          <text>"Eigene Kfz"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0dp4lvk">
+          <text>"Externe Vergabe"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1pzyy8m">
+        <inputEntry id="UnaryTests_16bp7vm">
+          <text>&gt;= 4</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_134djkh">
+          <text>"class1"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_10qmf91">
+          <text>"Leasing"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_07mdf4c">
+          <text>"Externe Vergabe"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_18fsr36">
+        <inputEntry id="UnaryTests_0spftr5">
+          <text>&gt;= 4</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_08notl5">
+          <text>"class1"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1qkfu6w">
+          <text>"Wartungsvertrag"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1m30lti">
+          <text>"Externe Vergabe"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0pbf9ul">
+        <inputEntry id="UnaryTests_1hzf4ze">
+          <text>&gt;= 4</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ss03mq">
+          <text>"class1"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0awqt4l">
+          <text>"Eigene Kfz"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0bwyxqp">
+          <text>"Interne Vergabe"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_00p4fz3">
+        <inputEntry id="UnaryTests_1rps4ye">
+          <text>&gt;= 4</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0u0djn7">
+          <text>"class2"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_15n0nln">
+          <text>"Leasing"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_00wo58a">
+          <text>"Externe Vergabe"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_081x0d8">
+        <inputEntry id="UnaryTests_1ipnlma">
+          <text>&gt;= 4</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_02yy0ve">
+          <text>"class2"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0v40fga">
+          <text>"Wartungsvertrag"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0vkawaa">
+          <text>"Externe Vergabe"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_08ps8rf">
+        <inputEntry id="UnaryTests_0camy99">
+          <text>&gt;= 4</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_05wqzpg">
+          <text>"class2"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0sf2dy9">
+          <text>"Eigene Kfz"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1uebw0n">
+          <text>"Externe Vergabe"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <inputData id="InputData_1ck6zmk" name="Fahrzeugalter">
+    <extensionElements>
+      <biodi:bounds x="309" y="376" width="125" height="45" />
+    </extensionElements>
+  </inputData>
+  <inputData id="InputData_1f12bwb" name="Vertragsart">
+    <extensionElements>
+      <biodi:bounds x="589" y="380" width="125" height="45" />
+    </extensionElements>
+  </inputData>
+  <knowledgeSource id="KnowledgeSource_1kjtrb9" name="Fuhrpark">
+    <extensionElements>
+      <biodi:bounds x="689" y="120" width="100" height="63" />
+      <biodi:edge source="Decision_1cif402">
+        <biodi:waypoints x="585" y="233" />
+        <biodi:waypoints x="689" y="177" />
+      </biodi:edge>
+    </extensionElements>
+    <authorityRequirement>
+      <requiredDecision href="#Decision_1cif402" />
+    </authorityRequirement>
+  </knowledgeSource>
+  <inputData id="InputData_06kojze" name="Fahrzeugklasse">
+    <extensionElements>
+      <biodi:bounds x="156" y="296" width="125" height="45" />
+    </extensionElements>
+  </inputData>
+</definitions>

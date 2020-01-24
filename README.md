@@ -24,7 +24,7 @@ An diesem Prozess nahmen wir letzte Änderungen vor und verfeinerten diesen. Ein
 <img src="https://github.com/cooleitmenschen/IT-Auswahl/blob/master/Prozesse/Abbildungen/Postman Startnachricht.png"
 alt="Postman Startnachricht"/>
 
-<img src="https://github.com/cooleitmenschen/IT-Auswahl/blob/master/Prozesse/Abbildungen/Postman DMN Interne Vergabe.png	"
+<img src="https://github.com/cooleitmenschen/IT-Auswahl/blob/master/Prozesse/Abbildungen/Postman DMN Interne Vergabe.png"
 alt="Postman Interne Vergabe"/>
 
 <img src="https://github.com/cooleitmenschen/IT-Auswahl/blob/master/Prozesse/Abbildungen/Postman DMN Externe Vergabe.png"

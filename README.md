@@ -6,13 +6,11 @@ Als wir uns innerhalb der Gruppe beraten hatten, überlegten wir den gesamten Wa
 
 <img src="https://github.com/cooleitmenschen/IT-Auswahl/blob/master/Prozesse/Abbildungen/1. Version.jpeg"
 alt="erste Version" />
-siehe Abb. 1
 
 Danach passten wir unseren Prozess an und legten den Fokus auf die Rechnungserstellung im Wartungsprozess. 
 
 <img src="https://github.com/cooleitmenschen/IT-Auswahl/blob/master/Prozesse/Abbildungen/2. Version.jpeg"
 alt="zweite Version" />
-siehe Abb. 2
 
 Der Prozess war immer noch zu umfangreich und komplex. Ein weiterer Kritikpunkt waren die unpassenden Formulierungen der Tasks und Events. Außerdem fehlte die DMN Task, weshalb wir erneut den Prozess gewechselt hatten. 
 
@@ -20,23 +18,25 @@ Unser präfinaler Prozess beschäftigt sich nun nur mit der Terminvergabe für W
 
 <img src="https://github.com/cooleitmenschen/IT-Auswahl/blob/master/Prozesse/Abbildungen/3. Version.jpeg"
 alt="dritte Version" />
-siehe Abb. 3
 
 An diesem Prozess nahmen wir letzte Änderungen vor und verfeinerten diesen. Eine der Änderungen ist, dass wir uns für ein Message Start Event entschieden haben. Somit wird eine HTTP Request gestartet, welche den Prozess Wartungsmeldung auslöst. Die nächste Änderung bezieht sich auf die Implementierung einer Postman Meldung welche an den Server gesendet wird. 
 
-<img src="https://github.com/cooleitmenschen/IT-Auswahl/blob/master/Prozesse/Abbildungen/postmanStartnachricht.jpeg"
+<img src="https://github.com/cooleitmenschen/IT-Auswahl/blob/master/Prozesse/Abbildungen/Postman Startnachricht.png"
 alt="Postman Startnachricht"/>
-siehe Abb. 4
+
+<img src="https://github.com/cooleitmenschen/IT-Auswahl/blob/master/Prozesse/Abbildungen/Postman DMN Interne Vergabe.png	"
+alt="Postman Interne Vergabe"/>
+
+<img src="https://github.com/cooleitmenschen/IT-Auswahl/blob/master/Prozesse/Abbildungen/Postman DMN Externe Vergabe.png"
+alt="Postman Externe Vergabe"/>
 
 Dadurch wird der Prozess mit Variablen fortgesetzt. Diese sind in der DMN Tabelle definiert. Noch eine Änderung befindet sich bei der Service Task „Termin vorschlagen“. Hier wird ein http get an localhost nodjs an einen Server gesendet, welcher in einer Demoversion ein Json Object mit einem Datum zurückgibt.
 
 <img src="https://github.com/cooleitmenschen/IT-Auswahl/blob/master/Prozesse/Abbildungen/KalenderAPI.jpeg"
 alt="Kalender API"/>
-siehe Abb. 5
 
 Die letzte Änderung ist bei der Send Task „Benachrichtigung externer Werkstatt“. Diese sendet eine Email von thbcamunda@gmail an die  hinterlegte Email mit der Wartungsanfrage.
 Somit sieht unser finaler Prozess wie folgt aus:
 
 <img src="https://github.com/cooleitmenschen/IT-Auswahl/blob/master/Prozesse/Abbildungen/4. finale Version.jpeg"
 alt="finale Version"/>
-siehe Abb. 6

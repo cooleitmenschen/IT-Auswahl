@@ -4,7 +4,7 @@ Projekt im Rahmen des Moduls "IT-Auswahl und Anpassung"
 ## Dokumentation Camunda BPM Prozess
 Als wir uns innerhalb der Gruppe beraten hatten, überlegten wir den gesamten Wartungsprozess inklusive der Terminvergabe zu wählen und diesen dann im Camunda Modeler zu modellieren. Nach der Abstimmung mit Prof. Dr. Meister ergab sich, dass dieser Prozess für die vorgegebene Zeit zu umfangreich und nicht realisierbar ist. Dieser Prozess sah wie folgt aus:
 
-<img src="https://github.com/cooleitmenschen/IT-Auswahl/blob/master/Prozesse/Abbildungen/1.Version.jpeg"
+<img src="https://github.com/cooleitmenschen/IT-Auswahl/blob/master/Prozesse/Abbildungen/1. Version.jpeg"
 alt="erste Version" />
 siehe Abb. 1
 

@@ -19,10 +19,12 @@ Unser präfinaler Prozess beschäftigt sich nun nur mit der Terminvergabe für W
 <img src="https://github.com/cooleitmenschen/IT-Auswahl/blob/master/Prozesse/Abbildungen/3. Version.jpeg"
 alt="dritte Version" />
 
-An diesem Prozess nahmen wir letzte Änderungen vor und verfeinerten diesen. Eine der Änderungen ist, dass wir uns für ein Message Start Event entschieden haben. Somit wird eine HTTP Request gestartet, welche den Prozess Wartungsmeldung auslöst. Die nächste Änderung bezieht sich auf die Implementierung einer Postman Meldung welche an den Server gesendet wird. 
+An diesem Prozess nahmen wir letzte Änderungen vor und verfeinerten diesen. Eine der Änderungen ist, dass wir uns für ein Message Start Event entschieden haben. Die Wartungsmeldung wird durch eine HTTP POST Request gestartet. 
 
 <img src="https://github.com/cooleitmenschen/IT-Auswahl/blob/master/Prozesse/Abbildungen/Postman Startnachricht.png"
 alt="Postman Startnachricht"/>
+
+Die nächsten zwei Abbildungen beziehen sich auf die Abfrage der DMN Tabelle. Hier wird die DMN Tabelle mit HTTP POST Requests abgefragt. Leider kann eine Automatisierung dieses Prozessschritts durch die REST API von Camunda nicht erreicht werden. Es werden die zwei Möglichkeiten gezeigt, die mit dem Prozess erreicht werden können. Entweder das Fahrzeug kann an die interne Werkstatt oder an die externe Werkstatt weitergegeben werden.
 
 <img src="https://github.com/cooleitmenschen/IT-Auswahl/blob/master/Prozesse/Abbildungen/Postman DMN Interne Vergabe.png"
 alt="Postman Interne Vergabe"/>

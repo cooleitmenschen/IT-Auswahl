@@ -10,7 +10,7 @@ siehe Abb. 1
 
 Danach passten wir unseren Prozess an und legten den Fokus auf die Rechnungserstellung im Wartungsprozess. 
 
-<img src="https://github.com/cooleitmenschen/IT-Auswahl/blob/master/Prozesse/Abbildungen/2.Version.jpeg"
+<img src="https://github.com/cooleitmenschen/IT-Auswahl/blob/master/Prozesse/Abbildungen/2. Version.jpeg"
 alt="zweite Version" />
 siehe Abb. 2
 
@@ -18,7 +18,7 @@ Der Prozess war immer noch zu umfangreich und komplex. Ein weiterer Kritikpunkt 
 
 Unser präfinaler Prozess beschäftigt sich nun nur mit der Terminvergabe für Wartungen. Der Prozess beginnt mit dem Auslösen einer Wartungsmeldung. Daraufhin wird dieses Formular intern vom Programm "ausgefüllt" und weiter verarbeitet. Der eigentliche Gedanke hierbei war, dass das Programm weiß wann welches Fahrzeug zur Wartung dran ist und schickt dann automatisch die Terminvorschläge los. Die Implementierung dessen wäre jedoch zu aufwendig gewesen. Daher füllt in unserem Prozess ein Mitarbeiter manuell ein Protokoll aus, in welchen die Vertragsart, die Fahrzeugklasse und das Fahrzeugalter angegeben werden muss. Die DMN Task entscheidet dann, ob die Wartung extern oder intern erfolgt. Je nach Ergebnis der DMN Task wird mittels einer exclusive Decision auf den internen oder externen Wartungspfad weitergeleitet. Im Internen Pfad prüft zuerst das System nach möglichen Terminen und schlägt diese dann vor. Der betroffene Mitarbeiter erhält eine Meldung und überprüft ob der Termin wahrgenommen werden kann. Nach seiner Bestätigung wird das Fahrzeug der Werkstatt übergeben und der Prozess (intern) ist abgeschlossen. Im externen Pfad wird die externe Werkstatt mittels einer automatisierten Benachrichtigung per Mail informiert. Dann wird der Termin manuell mit den betroffenen Mitarbeiter abgestimmt. Anschließend wird das Fahrzeug der Werkstatt übergeben und der Prozess (extern) ist abgeschlossen.
 
-<img src="https://github.com/cooleitmenschen/IT-Auswahl/blob/master/Prozesse/Abbildungen/3.Version.jpeg"
+<img src="https://github.com/cooleitmenschen/IT-Auswahl/blob/master/Prozesse/Abbildungen/3. Version.jpeg"
 alt="dritte Version" />
 siehe Abb. 3
 

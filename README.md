@@ -32,7 +32,7 @@ alt="Postman Interne Vergabe"/>
 <img src="https://github.com/cooleitmenschen/IT-Auswahl/blob/master/Prozesse/Abbildungen/Postman DMN Externe Vergabe.png"
 alt="Postman Externe Vergabe"/>
 
-Dadurch wird der Prozess mit Variablen fortgesetzt. Diese sind in der DMN Tabelle definiert. Noch eine Änderung befindet sich bei der Service Task „Termin vorschlagen“. Hier wird ein http get an localhost nodjs an einen Server gesendet, welcher in einer Demoversion ein Json Object mit einem Datum zurückgibt.
+Dadurch wird der Prozess mit Variablen fortgesetzt. Diese sind in der DMN Tabelle definiert. Noch eine Änderung befindet sich bei der Service Task „Termin vorschlagen“. Hier wird eine HTTP GET Request an eine eigene API gesendet, welche ein JSON Object mit einem Datum zurückgibt.
 
 <img src="https://github.com/cooleitmenschen/IT-Auswahl/blob/master/Prozesse/Abbildungen/KalenderAPI.jpeg"
 alt="Kalender API"/>

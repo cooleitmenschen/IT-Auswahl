@@ -5,6 +5,8 @@ Projekt im Rahmen des Moduls "IT-Auswahl und Anpassung"
 Als wir uns innerhalb der Gruppe beraten hatten, überlegten wir den gesamten Wartungsprozess inklusive der Terminvergabe zu wählen und diesen dann im Camunda Modeler zu modellieren. Nach der Abstimmung mit Prof. Dr. Meister ergab sich, dass dieser Prozess für die vorgegebene Zeit zu umfangreich und nicht realisierbar ist. Dieser Prozess sah wie folgt aus:
 
 siehe Abb. 1 (alle Abbildungen sind in der Abbildungsverzeichnis.pdf)
+<img src="https://github.com/cooleitmenschen/IT-Auswahl/blob/master/Prozesse/Abbildungen/1.Version.jpeg"
+alt="erste Version" />
 
 Danach passten wir unseren Prozess an und legten den Fokus auf die Rechnungserstellung im Wartungsprozess. 
 
